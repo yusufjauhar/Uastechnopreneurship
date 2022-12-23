@@ -16,8 +16,8 @@
     <header class="header">
       <nav class="navbar">
         <a href="#">home</a>
-        <a href="#">about</a>
-        <a href="#">our menu</a>
+        <a href="#about">about</a>
+        <a href="#our-menu-food">our menu</a>
       </nav>
 
       <div class="icons">
@@ -75,8 +75,8 @@
           <div class="quality-content">
             <h1>Our food quality</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam mollitia obcaecati architecto corporis fugit magni molestiae, itaque molestias beatae quas, eveniet nesciunt quia? Molestias, ab error vitae facere quos qui. Lorem
-              ipsum dolor sit amet consectetur, adipisicing elit. Excepturi omnis itaque commodi pariatur quia, minima ullam sunt. Sunt, natus magni laborum ipsam, dolor reprehenderit exercitationem consectetur nesciunt error iure odit!
+              Kami menyajikan basreng dengan bahan bahan yang berkualitas terbuat dari bakso asli dari aneka olahan bakso yang bersih dan tanpa pengawet. Produk basreng kami juga tahan lama kerena di goreng dengan minyak yang bagus. Cocok
+              untuk cemilan atau oleh oleh keluarga.
             </p>
           </div>
         </div>
@@ -134,9 +134,7 @@
     <div class="enjoy-our-food">
       <div class="food-main-content">
         <h1>enjoy our food</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quidem sit nostrum pariatur perferendis soluta saepe nam eveniet velit exercitationem iusto, molestias sapiente laborum? Hic, eaque. Voluptatum sit incidunt ipsa.
-        </p>
+        <p>Untuk menikmati produk basreng kami, saat ini baru terdapat 2 varian rasa yaitu original dan pedas dengan rasa yang pas cocok untuk cemilan semua kalangan umur</p>
       </div>
     </div>
 
@@ -150,8 +148,8 @@
 
             <div class="menu-food-text">
               <h2>Basreng original</h2>
-              <p>quos animi iusto architecto aliquam dignissimos, molestiae tempora doloremque dolores repellendus! Ab, est voluptatem.</p>
-              <p><span>Price / Rp......</span></p>
+              <p>Basreng dengan rasa original tanpa tambahan MSG namun tetap gurih dan renyah, cocok untuk kalian yang tidak suka pedas.</p>
+              <p><span>Price / Rp.13.000</span></p>
             </div>
           </div>
         </div>
@@ -162,16 +160,12 @@
 
             <div class="menu-food-text">
               <h2>Basreng pedas</h2>
-              <p>quos animi iusto architecto aliquam dignissimos, molestiae tempora doloremque dolores repellendus! Ab, est voluptatem.</p>
-              <p><span>Price / Rp......</span></p>
+              <p>Basreng rasa pedas dengan tambahan cabai bubuk yang menjadikan rasa pedas yang khas, gurih dan renyah. Cocok untuk kalian yang suka pedas.</p>
+              <p><span>Price / Rp.14.000</span></p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="before">
-      <img src="images/before footer.png" alt="" />
     </div>
 
     <div class="footer">
@@ -183,6 +177,14 @@
     </div>
 
     <!-- scroll reveal javascript link -->
+    <script>
+      const aboutSection = document.getElementById("about");
+
+      document.querySelector(".navbar a[href='#about']").addEventListener("click", function (event) {
+        event.preventDefault();
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+      });
+    </script>
 
     <script src="https://unpkg.com/scrollreveal"></script>
 
